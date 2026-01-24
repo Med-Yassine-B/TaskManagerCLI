@@ -14,14 +14,16 @@ bool next_command(std::string command){
     std::stringstream ss(command);
     std::string mode;
     ss>>mode;
+    mode =to_lower(mode);
     
-    if(to_lower(mode)=="todo"){
+    if(mode=="todo"){
         parse_todo_command(ss);
-    }else if (to_lower(mode)=="info") {
+    }else if (mode=="info") {
         print_info();
     }else if(command=="clear"){
         clear_console();
     }else if(command=="help"){
+        show_help_message();
 
     }else{
         log_error("{"+mode+"} isnt a valid mode");

@@ -58,5 +58,5 @@ void show_help_message(){
     std::cout
         <<"command structure:\n"
         "\t "
-        ;
+        "\n";
 }
