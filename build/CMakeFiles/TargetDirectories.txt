@@ -1,0 +1,3 @@
+/home/yassin/my_programs/c++/Task_managerCLI/build/CMakeFiles/taskmanager.dir
+/home/yassin/my_programs/c++/Task_managerCLI/build/CMakeFiles/edit_cache.dir
+/home/yassin/my_programs/c++/Task_managerCLI/build/CMakeFiles/rebuild_cache.dir
