@@ -1,6 +1,0 @@
-4Donecategorystudy math
-5Lowcategoryhello world
-6Lowcategorysave when ctrl+C is pressed
-7Lowcategorybetter input system
-8Lowcategoryadd history to the input system
-9Lowcategorygo for a run
