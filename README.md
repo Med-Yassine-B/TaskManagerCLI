@@ -46,5 +46,5 @@ Ensure you have a C++ compiler installed (like `g++`).
 5. **for installation**(optional):
     
     ```bash
-     sudo cmake install
+     sudo make install
     ```
