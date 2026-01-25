@@ -1,6 +1,7 @@
 #include "core.hpp"
 #include "filesystem.hpp"
 #include "input.hpp"
+#include "tasks.hpp"
 #include <utils.hpp>
 #include <string>
 #include <iostream>
@@ -14,6 +15,7 @@ int main(int argc,char** argv){
         logg("tasks file already exists");
         load();
     }
+    task_shows();//show tasks at start
 
 
     std::string command;

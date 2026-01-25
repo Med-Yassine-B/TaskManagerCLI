@@ -18,3 +18,4 @@ set(SOURCES
 
 # 3. Create the final program
 add_executable(taskmanager ${SOURCES})
+install(TARGETS taskmanager DESTINATION bin)
