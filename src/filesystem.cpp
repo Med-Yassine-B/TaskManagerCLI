@@ -82,10 +82,9 @@ void load_line(std::string &line){
     tasks.push_back(task);
 }
 
-void save(){
-    std::string res;
-    //saved in file as
-    //ID [\x1F] priority [\x1F] category [\x1F] task [\x1F]
+//saved in file as
+//ID [\x1F] priority [\x1F] category [\x1F] task [\x1F]
+void pack_tasks(std::vector<Task> tasks,std::string& res){
     for(auto task:tasks){
         res+=std::to_string(task.ID)+SEPRATOR;
         res+=priorite_strings[task.priorite]+SEPRATOR;
@@ -93,11 +92,15 @@ void save(){
         res+=task.description+SEPRATOR;
         res+='\n';
     }
-    if(!file_exist()){
-        log_error("File dose not exist to save too :(");
-    }
+}
+
+void save(){
+    std::string res;
+    //saved in file as
+    //ID [\x1F] priority [\x1F] category [\x1F] task [\x1F]
     std::ofstream f(".tasks.txt",std::ios::out|std::ios::trunc);
     if(f.is_open()){
+        pack_tasks(tasks,res);//put tasks in a string
         f<<res;
         f.close();
     }else{
