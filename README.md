@@ -43,3 +43,8 @@ Ensure you have a C++ compiler installed (like `g++`).
     ```bash
     make
     ```
+5. **for installation**(optional):
+    
+    ```bash
+     sudo cmake install
+    ```
