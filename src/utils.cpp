@@ -57,6 +57,18 @@ void print_banner(){
 void show_help_message(){
     std::cout
         <<"command structure:\n"
-        "\t "
-        "\n";
+        "\n"
+        "\t| Action | Command | Description |\n"
+        "\t| :---   | :---------------- | :--------------------------------- |\n"
+        "\t|   Add  |  todo add <task>  | Registers a new task.              |\n"
+        "\t|   Show |  todo show        | Displays all your current tasks.   |\n"
+        "\t|   Done |  todo done <id>   | Marks a specific task as finished. |\n"
+        "\t| Remove |  todo remove <id> | Deletes a task from the list.      |\n"
+        "\n"
+        "\t### System Commands\n"
+        "\t   info  - Shows version and project info.\n"
+        "\t   clear  - Wipes the terminal screen for a fresh start.\n"
+        "\t   help  - Opens the command guide.\n"
+        "\t   exit  - Saves changes and closes the application.\n";
+
 }
