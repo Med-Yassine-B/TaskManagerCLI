@@ -8,7 +8,7 @@
 
 #define SEPRATOR '\x1F'
 
-bool _saved;
+bool _saved=true;
 bool _file_exist=false;
 
 bool file_exist(){
